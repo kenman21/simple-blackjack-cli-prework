@@ -20,7 +20,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  answer = gets.chomp
+  gets.chomp
 end
 
 def end_game(card_total)
@@ -49,7 +49,6 @@ def invalid_command(answer)
   if answer != 'h' && answer!= 's'
     puts "Please enter a valid command"
   end 
-  prompt_user
 end
 
 #####################################################
@@ -58,5 +57,8 @@ end
 
 def runner
   # code runner here
+  welcome
+  prompt_user
+  get_user_input
 end
     
