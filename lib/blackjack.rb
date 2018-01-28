@@ -37,15 +37,19 @@ def initial_round
   return total
 end
 
-def hit?(number)
+def hit?(total)
   # code hit? here
   prompt_user
   answer = get_user_input
   if answer = 'h'
     card1 = deal_card
-    card_total = card1 + sum
-  elsif answer != 'h' && answer!= 's'
+    card_total = card1 + total
+    return card_total
+  elsif answer = 's'
+    hit?(total)
+  else
     invalid_command
+    hit?(total)
   end
 end
 
@@ -64,6 +68,9 @@ def runner
   welcome
   initial_round
   prompt_user
-  hit?(get_user_input)
+  hit?(total)
+  if card_total > 21
+    end_game(card_total)
+  end
 end
     
