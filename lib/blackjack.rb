@@ -41,11 +41,11 @@ def hit?(total)
   # code hit? here
   prompt_user
   answer = get_user_input
-  if answer = 'h'
+  if answer == 'h'
     card1 = deal_card
     card_total = card1 + total.to_i
     return card_total
-  elsif answer = 's'
+  elsif answer == 's'
     display_card_total(total)
   else
     invalid_command
