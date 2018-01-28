@@ -64,12 +64,12 @@ end
 
 def runner
   # code runner here
-  welcome
-  initial_round
-  prompt_user
-  hit?(total)
-  if card_total > 21
-    end_game(card_total)
-  end
+  #welcome
+  #initial_round
+  #prompt_user
+  #hit?(total)
+  #if card_total > 21
+    #end_game(card_total)
+  #end
 end
     
