@@ -40,7 +40,7 @@ end
 def hit?(total)
   # code hit? here
   prompt_user
-  answer = get_user_input
+  get_user_input
   if answer == 'h'
     card1 = deal_card
     card_total = card1 + total.to_i
