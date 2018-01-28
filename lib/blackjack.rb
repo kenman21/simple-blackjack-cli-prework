@@ -45,12 +45,11 @@ def hit?(total)
     card1 = deal_card
     card_total = card1 + total.to_i
     return card_total
-  elsif answer = 's'
-    hit?(total)
   else
     invalid_command
-    hit?(total)
+    prompt_user
   end
+  display_card_total
 end
 
 def invalid_command
