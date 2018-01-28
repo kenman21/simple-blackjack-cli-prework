@@ -45,7 +45,6 @@ def hit?(total)
     card1 = deal_card
     card_total = card1 + total.to_i
     display_card_total(total)
-    return card_total
   else
     invalid_command
     prompt_user
