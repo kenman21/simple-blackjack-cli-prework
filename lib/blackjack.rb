@@ -43,7 +43,7 @@ def hit?(total)
   answer = get_user_input
   if answer = 'h'
     card1 = deal_card
-    card_total = card1 + total
+    card_total = card1 + total.to_i
     return card_total
   elsif answer = 's'
     hit?(total)
