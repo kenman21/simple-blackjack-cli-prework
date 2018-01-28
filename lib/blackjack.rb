@@ -46,7 +46,6 @@ def hit?(total)
     card_total = card1 + total.to_i
     return card_total
   elsif answer = 's'
-    hit?(total)
   else
     invalid_command
     hit?(total)
